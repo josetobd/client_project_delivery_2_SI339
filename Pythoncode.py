@@ -61,17 +61,19 @@ def generate_athlete_html(csv_filename):
     # HTML template for the athlete's performance
     html_content = f'''
     <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{athlete_name}'s Performance History</title>
-    </head>
-    <body>
-        <header>
-            <h1>{athlete_name}'s Performance History</h1>
-        </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{athlete_name}'s Performance History</title>
+</head>
+<body>
+    <header>
+        <h1>{athlete_name}'s Performance History</h1>
+    </header>
 
+    <!-- Main landmark reference to wrap the primary content -->
+    <main>
         <div class="athlete-results">
             <h2>Performances of {athlete_name}</h2>
             <table border="1" cellpadding="5" cellspacing="0">
@@ -91,12 +93,14 @@ def generate_athlete_html(csv_filename):
                 </tbody>
             </table>
         </div>
+    </main>
 
-        <footer>
-            <p>&copy; 2024 {athlete_name}'s Performance History. All Rights Reserved.</p>
-        </footer>
-    </body>
-    </html>
+    <footer>
+        <p>&copy; 2024 {athlete_name}'s Performance History. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
     '''
 
     # Write the HTML content to the output file
