@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{athlete_name}'s Performance History</title>
+</head>
+<body>
+    <header>
+        <h1>{athlete_name}'s Performance History</h1>
+    </header>
+
+    <div class="athlete-results">
+        <h2>Performances of {athlete_name}</h2>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Overall Place</th>
+                    <th>Grade</th>
+                    <th>Time</th>
+                    <th>Date</th>
+                    <th>Meet</th>
+                    <th>Comments</th>
+                    <th>Photo</th>
+                </tr>
+            </thead>
+            <tbody>
+                {athlete_rows}
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 {athlete_name}'s Performance History. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+'''
